@@ -10,7 +10,7 @@ const CharactersProvider = ({children}) => {
     const [compareCharacters, setCompareCharacters] = useState([])
     const [showModal, setShowModal] = useState(false)
 
-    const initialValues = { name: '', gender: '', location: '',image:'', id:(Math.random() + 1).toString(36).substring(7) }
+    const initialValues = { name: '', gender: '', location: '',image:'', id:(Math.random() + 1).toString(36).substring(7), episode:[] }
     const [formValues, setFormValues] = useState(initialValues)
     const [formErrors, setFormErrors] = useState({})
     const [isSubmit, setIsSubmit] = useState(false)
